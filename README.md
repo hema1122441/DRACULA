@@ -8,9 +8,12 @@
 
 ## **🌍 Language Specification / تحديد اللغة**
 
-* [English Version (\#english)](#bookmark=id.hccel2w32vui)  
-* [النسخة العربية (\#arabic)](#bookmark=id.c9a89e30lanz)
+## 🌍 Language / اللغة
+* [English Version](#english)
+* [النسخة العربية](#arabic)
 
+---
+<a name="english"></a>..)
 ## **🇺🇸 Technical Specifications & Documentation (English)**
 
 DRACULA is an enterprise-grade, fully localized digital sales automation engine engineered for execution within restricted local hardware environments. Utilizing the official Meta Webhook Architecture, the system establishes direct, real-time integration with Facebook Messenger, Instagram Direct Message (DM), and the WhatsApp Business Cloud API, thereby facilitating microsecond response latencies while preserving absolute digital data sovereignty.
@@ -67,6 +70,7 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
   ```bash
    python main.py
 ```
+<a name="arabic"></a>
 ## **🇪🇬 وثيقة المواصفات الفنية والتشغيلية (العربية)**
 
 يمثل مشروع DRACULA محركاً برمجياً متقدماً لأتمتة العمليات البيعية الرقمية بمستوى المؤسسات، وقد صُمّم خصيصاً للتنفيذ المحلي الشامل (100% Local Deployment) دون الاعتماد على البنى التحتية السحابية الخارجية لضمان السيادة المطلقة على البيانات. يعتمد النظام على معمارية الويب هوك الرسمية (Official Webhook Architecture) للربط المباشر مع منصات Meta (Facebook Messenger, Instagram DMs, WhatsApp Cloud API)، مما يضمن استجابة فورية فائقة السرعة مع حماية البيانات الحساسة للشركات.
@@ -78,6 +82,8 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 * **أمثلة استهلاك الموارد في البيئات العتادية المحدودة:** تم تصميم النظام ليعمل بكفاءة عالية على أجهزة التطوير القياسية والخوادم المحلية ذات الموارد المحدودة (حيث تم اختباره بنجاح على معالج Core i5 وذاكرة عشوائية بسعة 8 جيجابايت) عن طريق عزل ذاكرة الاستنتاج وتخصيصها بالكامل للنماذج اللغوية الصغيرة (SLMs).
 
 ### **🛠 المعمارية التقنية وتدفق البيانات**
+
+```text
 
 \[ واجهة العميل: فيسبوك / إنستجرام / واتساب \]  
                        │  
@@ -93,7 +99,7 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
                        │  
                        ▼  
          \[ خادم Ollama المحلي \] ◄──► \[ النموذج اللغوي: qwen2.5-coder:1.5b \]
-
+```
 ### **🧠 المميزات الهندسية للنظام**
 
 * **موجّه البيانات الموحد (Omnichannel Router):** نقطة نهاية برمجية غير متزامنة موحدة قادرة على فك ترميز وتوجيه حزم البيانات القادمة من مختلف تطبيقات منصة Meta بكفاءة عالية.  
@@ -103,19 +109,23 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 ### **🚀 دليل التشغيل والتهيئة التقنية**
 
 1. **جلب النموذج اللغوي محلياً:**  
-   يرجى التأكد من سحب وتثبيت النموذج اللغوي عبر الواجهة الطرفية:  
+   يرجى التأكد من سحب وتثبيت النموذج اللغوي عبر الواجهة الطرفية:
+   ```bash 
    ollama pull qwen2.5-coder:1.5b
 
-2. **تثبيت الحزم والاعتمادات البرمجية:**  
-   يتم إنشاء بيئة برمجية معزولة وتثبيت المكتبات المطلوبة للتشغيل غير المتزامن:  
+3. **تثبيت الحزم والاعتمادات البرمجية:**  
+   يتم إنشاء بيئة برمجية معزولة وتثبيت المكتبات المطلوبة للتشغيل غير المتزامن:
+   ```bash 
    pip install fastapi uvicorn httpx
 
-3. **تهيئة منفذ الاتصال الخارجي:**  
-   يتم استخدام بروتوكول نفق الاتصال الآمن لتوفير رابط مشفر يدعم بروتوكول HTTPS لمتطلبات Meta الفنية:  
+5. **تهيئة منفذ الاتصال الخارجي:**  
+   يتم استخدام بروتوكول نفق الاتصال الآمن لتوفير رابط مشفر يدعم بروتوكول HTTPS لمتطلبات Meta الفنية:
+   ```bash 
    ngrok http 8000
 
-4. **تشغيل الخادم:**  
-   يتم تشغيل المحرك البرمجي الرئيسي باستخدام خادم ASGI المتمثل في Uvicorn:  
+7. **تشغيل الخادم:**  
+   يتم تشغيل المحرك البرمجي الرئيسي باستخدام خادم ASGI المتمثل في Uvicorn:
+   ```bash 
    python main.py
 
 ## **📊 System Overview & Metrics / نظرة عامة على النظام**
@@ -127,4 +137,4 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 This project is open-source under the **MIT License**. Feel free to open issues or submit pull requests for architecture optimizations, memory leak code-reviews, or local QR decoding layers.  
 هذا المشروع متاح للعموم كبرمجية مفتوحة المصدر بموجب رخصة **MIT**. نرحب بكافة المساهمات البرمجية، وطلبات مراجعة الأكواد (Code Reviews)، والمقترحات الخاصة بتحسين إدارة الذاكرة، أو تطوير طبقات فك تشفير الرموز السريعة (QR Codes) محلياً.
 
-[image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAYCAYAAACWTY9zAAABeElEQVR4Xu2V7Y3CMBBEUwMtUAMt0MK1QAvXAh1cCZRAB9fBdUADFMD55TLSMLLj8OMkfvhJK+KPrGfXu2GaBoNNnIvdin3lQvCTE//Nvdix2PfUPvxjsU3gTJESNQccbH03/R12WdYfxa62DqzhR8gXAtmP4QPfm0AAmzkc+JUTwTgzwNiFsMfH/iwymFUQQGQOh3idMM49jMmS0DWKvC7GCr4LjjlU1F7kMPacYl5Xul/Gn4sJSkOQqZeypftXDfHs1woSllcjYZrnHcTwi0C/+vTZRUXpV6J5XWUKEC3B3jTgmZJofK8KlbB0pnnoCctacljzLiSLGGKzmZ5wAY7PtzLTEux4tqhF7/RMxhOqq8SF4YDnWlcyr+JPsgtpHhcGrXfnl3vCNPbPB1CXWZui1oUEksLWsj13UtYJQnofWN5rOa514UsZEzjiIKJERN7/lr8k0ZoH952BVlEbc2h+SB3WsRQuyDwBtkAMSSDIzN5gMHgrfgGNqINFhS4pywAAAABJRU5ErkJggg==>
+
