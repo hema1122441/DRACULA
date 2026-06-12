@@ -18,7 +18,7 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 
 ### **🎯 Engineering & Operational Philosophy**
 
-* **Mitigating Latency-Induced Revenue Attrition:** Empirical data within the electronic commerce sector indicates that consumer conversion rates decay by approximately sixty percent (![][image1]) should response latency exceed a five-minute threshold. The architecture described herein mitigates this systemic vulnerability through instantaneous automated query resolution.  
+* **Mitigating Latency-Induced Revenue Attrition:** Empirical data within the electronic commerce sector indicates that consumer conversion rates decay by approximately sixty percent should response latency exceed a five-minute threshold. The architecture described herein mitigates this systemic vulnerability through instantaneous automated query resolution.  
 * **Structural Memory Integrity and Account Security:** The software design completely eschews browser-based extensions and Document Object Model (DOM) scraping mechanisms, thereby preventing memory saturation, associated hardware failure, and platform-level account suspensions.  
 * **Hardware Optimization for Constrained Environments:** The system is optimized to perform high-throughput local inference on standard developer hardware—specifically evaluated on a Core i5 processor and an 8GB RAM memory configuration—by reserving system memory strictly for Small Language Models (SLMs).
 
@@ -75,7 +75,9 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 
 ### **🎯 الفلسفة الهندسية والتشغيلية**
 
-* **معالجة الفقد المالي الناجم عن فترات الانتظار:** تشير التحليلات الإحصائية في قطاع التجارة الإلكترونية إلى تراجع معدلات التحويل بنسبة تقارب الستين بالمائة (![][image1]) في حال تجاوز زمن الاستجابة عتبة الخمس دقائق. ويعمل هذا النظام على سد هذه الثغرة التشغيلية عبر الاستجابة الفورية واللحظية للطلبات المستلمة.  
+* **معالجة الفقد المالي الناجم عن فترات الانتظار:** تشير التحليلات الإحصائية في قطاع التجارة الإلكترونية إلى تراجع معدلات التحويل بنسبة تقارب الستين بالمائة<img width="1113" height="944" alt="DRACULA" src="https://github.com/user-attachments/assets/60496597-0ad3-478e-88db-f36db5acd5ef" />
+<img width="1113" height="944" alt="DRACULA" src="https://github.com/user-attachments/assets/b19ee05d-1ef6-4d33-a91b-b89decb0ac04" />
+ في حال تجاوز زمن الاستجابة عتبة الخمس دقائق. ويعمل هذا النظام على سد هذه الثغرة التشغيلية عبر الاستجابة الفورية واللحظية للطلبات المستلمة.  
 * **ضمان استقرار سلامة الذاكرة وأمن الحسابات:** يتجنب التصميم البرمجي بالكامل استخدام إضافات المتصفح وهندسة كشط بيانات واجهة المستخدم (DOM Scraping) الهشة، مما يمنع تسريب الذاكرة العشوائية ويحد من مخاطر حظر الحسابات التجارية من قبل المنصات المزودة.  
 * **أمثلة استهلاك الموارد في البيئات العتادية المحدودة:** تم تصميم النظام ليعمل بكفاءة عالية على أجهزة التطوير القياسية والخوادم المحلية ذات الموارد المحدودة (حيث تم اختباره بنجاح على معالج Core i5 وذاكرة عشوائية بسعة 8 جيجابايت) عن طريق عزل ذاكرة الاستنتاج وتخصيصها بالكامل للنماذج اللغوية الصغيرة (SLMs).
 
