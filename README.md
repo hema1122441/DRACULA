@@ -13,7 +13,7 @@
 * [النسخة العربية](#arabic)
 
 ---
-<a name="english"></a>..)
+<a name="english"></a>
 ## **🇺🇸 Technical Specifications & Documentation (English)**
 
 DRACULA is an enterprise-grade, fully localized digital sales automation engine engineered for execution within restricted local hardware environments. Utilizing the official Meta Webhook Architecture, the system establishes direct, real-time integration with Facebook Messenger, Instagram Direct Message (DM), and the WhatsApp Business Cloud API, thereby facilitating microsecond response latencies while preserving absolute digital data sovereignty.
