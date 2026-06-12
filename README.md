@@ -6,11 +6,9 @@
 
 ---
 
-## **🌍 Language Specification / تحديد اللغة**
-
 ## 🌍 Language / اللغة
-* [English Version](#english)
-* [النسخة العربية](#arabic)
+* [English](#english)
+* [العربية](#arabic)
 
 ---
 <a name="english"></a>
