@@ -4,6 +4,8 @@
 **Licensing Agreement:** MIT License (Open-Source Academic & Commercial Grant)  
 **Technical Stack:** Python (Version 3.10 or higher) | FastAPI Framework | Ollama (Local Small Language Model Inference) | Meta Graph API Integration
 
+---
+
 ## **🌍 Language Specification / تحديد اللغة**
 
 * [English Version (\#english)](#bookmark=id.hccel2w32vui)  
@@ -21,6 +23,7 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 
 ### **🛠 System Architecture & Data Flow**
 
+```text
 \[ Client Interface: Facebook / Instagram / WhatsApp \]  
                        │  
                        ▼  (Meta Official Webhook \- HTTP POST JSON)  
@@ -35,7 +38,7 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
                        │  
                        ▼  
        \[ Local Ollama Instance \] ◄──► \[ SLM Model: qwen2.5-coder:1.5b \]
-
+```
 ### **🧠 Core Architectural Features**
 
 * **Unified Omnichannel Deserialization Routing:** A singular asynchronous endpoint engineered to ingest, deserialize, and process structured payloads originating from disparate Meta communication APIs within a unified processing pipeline.  
@@ -46,20 +49,24 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 
 1. **Model Acquisition:**  
    Ensure the local model is pulled via the command-line interface:  
-   ollama pull qwen2.5-coder:1.5b
+    ```bash
+    ollama pull qwen2.5-coder:1.5b
 
 2. **Dependency Installation:**  
    Initialize the isolated virtual environment and install the required asynchronous libraries:  
+    ```bash
    pip install fastapi uvicorn httpx
 
-3. **Tunnel Configuration:**  
+4. **Tunnel Configuration:**  
    Expose the local server port via a secure tunneling protocol to satisfy the HTTPS requirement imposed by Meta:  
+   ```bash
    ngrok http 8000
 
-4. **Application Execution:**  
+6. **Application Execution:**  
    Execute the primary server process utilizing the Uvicorn ASGI server:  
+  ```bash
    python main.py
-
+```
 ## **🇪🇬 وثيقة المواصفات الفنية والتشغيلية (العربية)**
 
 يمثل مشروع DRACULA محركاً برمجياً متقدماً لأتمتة العمليات البيعية الرقمية بمستوى المؤسسات، وقد صُمّم خصيصاً للتنفيذ المحلي الشامل (100% Local Deployment) دون الاعتماد على البنى التحتية السحابية الخارجية لضمان السيادة المطلقة على البيانات. يعتمد النظام على معمارية الويب هوك الرسمية (Official Webhook Architecture) للربط المباشر مع منصات Meta (Facebook Messenger, Instagram DMs, WhatsApp Cloud API)، مما يضمن استجابة فورية فائقة السرعة مع حماية البيانات الحساسة للشركات.
