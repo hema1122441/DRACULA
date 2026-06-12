@@ -51,7 +51,7 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
 * **Deterministic Inference Constraints:** To prevent algorithmic hallucination and ensure strict alignment with predefined local product inventories and pricing schedules, the model's hyperparameter boundaries are constrained to a rigid temperature setting of 0.3.  
 * **Localized Linguistic Synthesis:** The language generation layer is structurally aligned to synthesize highly formal yet accessible Egyptian Arabic, systematically guiding the user toward the submission of essential contact metadata to secure commercial conversion.
 
-### **🚀 Deployment Protocol**
+### ** Deployment Protocol**
 
 1. **Model Acquisition:**  
    Ensure the local model is pulled via the command-line interface:  
@@ -103,7 +103,7 @@ DRACULA is an enterprise-grade, fully localized digital sales automation engine 
                        ▼  
          \[ خادم Ollama المحلي \] ◄──► \[ النموذج اللغوي: qwen2.5-coder:1.5b \]
 ```
-### **🧠 المميزات الهندسية للنظام**
+### ** المميزات الهندسية للنظام**
 
 * **موجّه البيانات الموحد (Omnichannel Router):** نقطة نهاية برمجية غير متزامنة موحدة قادرة على فك ترميز وتوجيه حزم البيانات القادمة من مختلف تطبيقات منصة Meta بكفاءة عالية.  
 * **الحد من الهلوسة البرمجية (Deterministic Constraints):** تم ضبط معايير الاستنتاج للنموذج بدقة عند درجة حرارة استنتاج Temperature \= 0.3 لضمان الالتزام الصارم ببيانات المخزون والأسعار المحددة مسبقاً من قبل المؤسسة دون حياد أو تأليف.  
