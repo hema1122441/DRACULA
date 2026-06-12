@@ -1,5 +1,6 @@
-<img width="400" height="339" alt="DRACULA(1)" src="https://github.com/user-attachments/assets/68daf312-bb93-4c62-adb1-279a1f449c20" />
-
+<div align="center">
+  <img width="400" height="339" alt="DRACULA(1)" src="https://github.com/user-attachments/assets/68daf312-bb93-4c62-adb1-279a1f449c20" />
+</div>
 
 
 # **🧛 DRACULA (Direct Response & Automated Customer Utility Language Architecture)**
